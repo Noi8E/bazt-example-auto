@@ -1,4 +1,4 @@
-package cloud.autotests.docs;
+package ru.bazt.autotests.docs;
 
 import com.codeborne.selenide.*;
 import org.openqa.selenium.Keys;

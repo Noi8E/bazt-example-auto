@@ -1,6 +1,6 @@
-package cloud.autotests.helpers;
+package ru.bazt.autotests.helpers;
 
-import cloud.autotests.config.Project;
+import ru.bazt.autotests.config.Project;
 import com.codeborne.selenide.Selenide;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;

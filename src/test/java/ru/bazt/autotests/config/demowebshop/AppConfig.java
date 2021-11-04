@@ -1,4 +1,4 @@
-package cloud.autotests.config.demowebshop;
+package ru.bazt.autotests.config.demowebshop;
 
 import org.aeonbits.owner.Config;
 

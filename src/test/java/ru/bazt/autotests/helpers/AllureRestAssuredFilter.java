@@ -1,4 +1,4 @@
-package cloud.autotests.helpers;
+package ru.bazt.autotests.helpers;
 
 import io.qameta.allure.restassured.AllureRestAssured;
 

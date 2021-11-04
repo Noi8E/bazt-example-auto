@@ -1,8 +1,8 @@
-package cloud.autotests.tests.demowebshop;
+package ru.bazt.autotests.tests.demowebshop;
 
-import cloud.autotests.config.demowebshop.App;
-import cloud.autotests.helpers.AllureRestAssuredFilter;
-import cloud.autotests.tests.TestBase;
+import ru.bazt.autotests.config.demowebshop.App;
+import ru.bazt.autotests.helpers.AllureRestAssuredFilter;
+import ru.bazt.autotests.tests.TestBase;
 import com.codeborne.selenide.Configuration;
 import io.qameta.allure.Story;
 import io.restassured.RestAssured;
