@@ -33,7 +33,7 @@ public class SlickListTests extends TestBase {
             $x("//button[@type='button' and contains(@aria-label, 'Next')]").should(visible).doubleClick();
         });
         step("Клик по появившемуся элементу", () -> {
-            $(".service_grey").$("[href*='services/gov/audit-doc-gos'").click();
+            $(".service_grey").scrollTo().$("[href*='services/gov/audit-doc-gos'").click();
         });
     }
 }
