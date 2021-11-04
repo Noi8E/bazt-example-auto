@@ -30,10 +30,11 @@ public class SlickListTests extends TestBase {
             $(".service_auto").should(visible);
         });
         step("делаем двойной клик по стрелке в scrollView", () -> {
-            $x("//button[@type='button' and contains(@aria-label, 'Next')]").should(visible).doubleClick();
+            $x("//button[@type='button' and contains(@aria-label, 'Next')]").should(visible).click();
         });
         step("Клик по появившемуся элементу", () -> {
-            $(".service_grey").scrollTo().$("[href*='services/gov/audit-doc-gos'").click();
+            $("[aria-describedby='slick-slide04'").click();
         });
     }
 }
+//https://bazt.ru/services/gov/business-process-gos
