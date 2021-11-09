@@ -2,6 +2,7 @@ package ru.bazt.autotests.tests;
 
 import io.qameta.allure.Muted;
 import jdk.nashorn.internal.ir.annotations.Ignore;
+import org.junit.jupiter.api.Disabled;
 import ru.bazt.autotests.helpers.DriverUtils;
 import io.qameta.allure.Description;
 import org.junit.jupiter.api.DisplayName;
@@ -28,9 +29,7 @@ public class MainPageTests extends TestBase {
             assertThat(actualTitle).isEqualTo(expectedTitle);
         });
     }
-    @Ignore
-    //Локально - ок. На виртуальной машине тест падает из-за Yandex-метрики
-    @Test
+    @Disabled("Локально - ок. На виртуальной машине тест падает из-за Yandex-метрики")
     @Description("MainPageTests")
     @DisplayName("Page console log should not have errors")
     void consoleShouldNotHaveErrorsTest() {
