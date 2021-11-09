@@ -1,5 +1,6 @@
 package ru.bazt.autotests.tests;
 
+import io.qameta.allure.Feature;
 import io.qameta.allure.Muted;
 import jdk.nashorn.internal.ir.annotations.Ignore;
 import org.junit.jupiter.api.Disabled;
@@ -13,10 +14,11 @@ import static com.codeborne.selenide.Selenide.title;
 import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.Assertions.assertThat;
 
+@Feature("MainPageTest")
 public class MainPageTests extends TestBase {
 
     @Test
-    @Description("MainPageTests")
+    @Description("Браузер может открыть сайт")
     @DisplayName("Page title should have header text")
     void titleTest() {
         step("Open url 'https://bazt.ru/'", () ->
@@ -29,6 +31,7 @@ public class MainPageTests extends TestBase {
             assertThat(actualTitle).isEqualTo(expectedTitle);
         });
     }
+
     @Disabled("Локально - ок. На виртуальной машине тест падает из-за Yandex-метрики")
     @Description("MainPageTests")
     @DisplayName("Page console log should not have errors")

@@ -1,6 +1,7 @@
 package ru.bazt.autotests.tests;
 
 import io.qameta.allure.Description;
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -9,10 +10,11 @@ import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Selenide.$;
 import static io.qameta.allure.Allure.step;
 
+@Feature("ContactsTests")
 public class ContactsTests extends TestBase {
 
     @Test
-    @Description("ContactsTests")
+    @Description("Пользователь может перейти на страницу с контактами с главной страницы")
     @DisplayName("Страница с контактами работает")
     void contactsTests() {
         step("Open main page", () ->

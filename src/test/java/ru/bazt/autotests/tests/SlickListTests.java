@@ -2,6 +2,7 @@ package ru.bazt.autotests.tests;
 
 import com.codeborne.selenide.Condition;
 import io.qameta.allure.Description;
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
@@ -12,10 +13,11 @@ import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.Assertions.assertThat;
 
+@Feature("SlickListTests")
 public class SlickListTests extends TestBase {
 
     @Test
-    @Description("SlickListTests")
+    @Description("Проверка работоспособности карусели на главной")
     @DisplayName("Карусель на главной странице работает")
     void slickTests() {
         step("Open main page", () ->
