@@ -1,5 +1,6 @@
 package ru.bazt.autotests.tests.demowebshop;
 
+import jdk.nashorn.internal.ir.annotations.Ignore;
 import ru.bazt.autotests.config.demowebshop.App;
 import ru.bazt.autotests.helpers.AllureRestAssuredFilter;
 import ru.bazt.autotests.tests.TestBase;
@@ -25,7 +26,7 @@ public class LoginTests extends TestBase {
         Configuration.baseUrl = App.config.webUrl();
     }
 
-    @Test
+    @Ignore
     @Tag("demowebshop")
     @Disabled("Example test code for further test development")
     @DisplayName("Successful authorization to some demowebshop (UI)")
@@ -43,7 +44,7 @@ public class LoginTests extends TestBase {
                 $(".account").shouldHave(text(App.config.userLogin())));
     }
 
-    @Test
+    @Ignore
     @Tag("demowebshop")
     @Disabled("Example test code for further test development")
     @DisplayName("Successful authorization to some demowebshop (API + UI)")

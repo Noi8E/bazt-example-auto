@@ -37,4 +37,3 @@ public class SlickListTests extends TestBase {
         });
     }
 }
-//https://bazt.ru/services/gov/business-process-gos
