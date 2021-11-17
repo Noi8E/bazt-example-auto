@@ -11,14 +11,14 @@ ___
 
 ## Используемые параметры по умолчанию 
 
-* BROWSER (default chrome)
-* BROWSER_VERSION (default 89.0)
-* BROWSER_SIZE (default 1920x1080)
+* BROWSER (default: chrome)
+* BROWSER_VERSION (default: 89.0)
+* BROWSER_SIZE (default: 1920x1080)
 * REMOTE_DRIVER_URL (url address from selenoid or grid)
-* THREADS (number of threads to run)
+* THREADS (default: 5)
 * ALLURE_NOTIFICATIONS_VERSION (default: 3.1.2)
 
-## Возможна так же ручная настройка параметров [CI](https://jenkins.autotests.cloud/job/bazt-example-auto/configure) <a href="https://www.jetbrains.com/idea/"><img src="./images/Jenkins.svg" width="30" height="30"  alt="Jenkins"/></a>
+## Возможна так же ручная настройка параметров [Jenkins](https://jenkins.autotests.cloud/job/bazt-example-auto/configure) <img src="media/images/Jenkins.svg" width="40" height="40">
 
 
 ### Run tests with filled local.properties:
