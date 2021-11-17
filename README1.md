@@ -20,7 +20,7 @@ ___
 
 ## Возможна так же ручная настройка параметров [CI](https://jenkins.autotests.cloud/job/bazt-example-auto/configure) <a href="https://www.jetbrains.com/idea/"><img src="./images/Jenkins.svg" width="30" height="30"  alt="Jenkins"/></a>
 
-![alt "Ручная настройа параметров"](./images/settings.png)
+![alt "Ручная настройа параметров"](media/settings.png)
 
 ### Run tests with filled local.properties:
 
@@ -41,19 +41,19 @@ allure serve build/allure-results
 ```
 
 ## Результат прогона можно увидеть в Allure
-![alt "Allure run"](./images/run.png "Allure Report")
+![alt "Allure run"](media/run.png "Allure Report")
 ## К каждому тесту прикладываются: 
 - Скриншоты 
 - Исходники страницы
 - Логи браузера
 - Видео 
 
-![alt "Allure steps"](./images/testSteps.png "Test steps")
+![alt "Allure steps"](media/testSteps.png "Test steps")
 
 ## Результаты прохождения отправляются ботом в телеграм <a href="https://www.jetbrains.com/idea/"><img src="https://starchenkov.pro/qa-guru/img/skills/Telegram.svg" width="30" height="30"  alt="Telegram"/></a>
 
-![alt "бот в телеграмме"](./images/telegram.png "бот в телеграм")
+![alt "бот в телеграмме"](media/telegram.png "бот в телеграм")
 
 ## Пример работы теста <a href="https://www.jetbrains.com/idea/"><img src="https://starchenkov.pro/qa-guru/img/skills/Selenoid.svg" width="40" height="40"  alt="Selenoid"/></a>
 
-![alt "Video"](./images/gif.gif "Video")
+![alt "Video"](media/gif.gif "Video")
