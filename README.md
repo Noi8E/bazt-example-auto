@@ -3,7 +3,7 @@ ___
 ## Стэк проекта:
 | Java | Selenide | Junit5 | Gradle | Selenoid | Jenkins | IntelliJ IDEA | Allure Report | Telegram |
 |:------:|:----:|:------:|:------:|:--------:|:--------:|:-------------:|:---------:|:--------:|
-| <img src="media/images/JAVA.svg" width="40" height="40"> | <img src="media/images/Selenide.svg" width="40" height="40"> | <img src="media/images/Gradle.svg" width="40" height="40"> | <img src="media/images/Junit5.svg" width="40" height="40"> | <img src="media/images/Selenoid.svg" width="40" height="40"> | <img src="media/images/Jenkins.svg" width="40" height="40"> | <img src="media/images/IDEA.svg" width="40" height="40"> | <img src="media/images/Allure Report.svg" width="40" height="40"> | <img src="media/images/Telegram.svg" width="40" height="40"> |
+| <img src="https://www.flaticon.com/premium-icon/java_5433712?term=java&page=1&position=2&page=1&position=2&related_id=5433712&origin=search" width="40" height="40"> | <img src="media/images/Selenide.svg" width="40" height="40"> | <img src="media/images/Gradle.svg" width="40" height="40"> | <img src="media/images/Junit5.svg" width="40" height="40"> | <img src="media/images/Selenoid.svg" width="40" height="40"> | <img src="media/images/Jenkins.svg" width="40" height="40"> | <img src="media/images/IDEA.svg" width="40" height="40"> | <img src="media/images/Allure Report.svg" width="40" height="40"> | <img src="media/images/Telegram.svg" width="40" height="40"> |
 
 ___
 
