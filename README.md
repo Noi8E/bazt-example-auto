@@ -17,35 +17,53 @@ ___
 * REMOTE_DRIVER_URL (url address from selenoid or grid)
 * THREADS (default: 5)
 * ALLURE_NOTIFICATIONS_VERSION (default: 3.1.2)
+___
 
 ## Возможна так же ручная настройка параметров [Jenkins](https://jenkins.autotests.cloud/job/bazt-example-auto/configure) <img src="media/images/Jenkins.svg" width="40" height="40">
 
 
-### Run tests with filled local.properties:
+### Запуск тестов с файлом конфигурации .properties:
 
 ```bash
 gradle clean test
 ```
 
-### Run tests with not filled local.properties:
+### Запуск тестов без файла конфигурации:
 
 ```bash
 gradle clean -DremoteDriverUrl=https://user1:1234@selenoid.autotests.cloud/wd/hub/ -DvideoStorage=https://selenoid.autotests.cloud/video/ -Dthreads=1 test
 ```
 
-### Serve allure report:
+### Генерация и просмотр отчета:
 
 ```bash
 allure serve build/allure-results
 ```
+___
 
-## Результат прогона можно увидеть в Allure
+## Проверяемый функционал
+* Тест страницы с Контактами
+* Тест главной Страницы
+* Тест страницы поиска по сайту
+* Тест карусели на главной странице
+___
+
+## Результат прохождения тестов / лаунчей можно импортировать в Jira-таски
+![alt "Jira issue"](media/images/Jira.png "Jira task")
+
+## Результат прохождения тестов генереируется в Allure-report
 ![alt "Allure run"](media/images/allureReport.png "Allure Report")
+
+## В качестве системы управления Тестами используется Allure-TestOps
+![alt "Allure TestOps"](media/images/TestOps.png "Allure TestOps")
+
+
 ## К каждому тесту прикладываются: 
 - Скриншоты 
 - Исходники страницы
 - Логи браузера
 - Видео 
+
 
 ![alt "Allure steps"](media/images/testStepsAllure.png "Test steps")
 
