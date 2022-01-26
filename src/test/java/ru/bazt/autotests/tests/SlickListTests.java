@@ -21,7 +21,7 @@ public class SlickListTests extends TestBase {
     @DisplayName("Карусель на главной странице работает")
     void slickTests() {
         step("Open main page", () ->
-                open(mainUrl));
+                open(""));
         step("На странице не виден блок с каруселью", () -> {
             $(".service_auto").shouldNot(visible);
         });

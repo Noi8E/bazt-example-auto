@@ -21,13 +21,12 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class MainPageTests extends TestBase {
 
     @Test
-    @Description("Браузер может открыть сайт")
-    @DisplayName("Page title should have header text")
+    @Description("Перехо на главную страницу происходи успешно")
+    @DisplayName("На главной странице есть хэдэр")
     void titleTest() {
-        step("Open url 'https://bazt.ru/'", () ->
-                open(mainUrl));
-        step("Page title should have text 'Главная'", () -> {
-            $x("//head/meta[6]").shouldBe(exist);
+        step("Открыть главную страницу", () -> open(""));
+        step("На странице есть искомый хэдэр", () -> {
+            $x("//title[contains(text(),'Главная')]").should(exist);
         });
     }
 
@@ -35,27 +34,24 @@ public class MainPageTests extends TestBase {
     @Description("Навигация по шапке в главной работает")
     @DisplayName("Навигация работает")
     void navigationButtonsTest() {
-        step("Open url 'https://bazt.ru/'", () ->
-                open(mainUrl));
-        step("Check about-us button", () ->
-                $("[title='О нас']").click());
-        step("About Us - page is working", () ->
+        step("Открыть главную страницу", () -> open(""));
+        step("Клик по разделу 'о Нас'", () -> $("[title='О нас']").click());
+        step("Клик отработал. Страница открылась", () ->
                 $(".grey_block").$("[src=\"assets/img/gazprom.png\"]").shouldBe(visible));
-        step("Check projects -  button", () ->
-                $("[title='Проекты']").click());
-        step("Projects - page is working", () ->
+        step("Клик по разделу 'Проекты'", () -> $("[title='Проекты']").click());
+        step("Клик отработал. Сраница с проектами открылась", () ->
                 $x("//h1[contains(text(),'Выполненные проекты')]").shouldBe(visible));
-        step("Check Services -  button", () ->
+        step("Клик по разделу 'Услуги'", () ->
                 $("[title='Услуги']").click());
-        step("Services - page is working", () ->
+        step("Клик отработал. Страница с услугами открылась", () ->
                 $x("//div[contains(text(),'Государственным заказчикам')]").shouldBe(visible));
-        step("Check News -  button", () ->
+        step("Клик по разделу 'Новости'", () ->
                 $("[title='Новости']").click());
-        step("News - page is working", () ->
+        step("Клик отработал. Страница с новостями открылась", () ->
                 $x("//h1[contains(text(),'Новости')]").shouldBe(visible));
-        step("Check Contacts -  button", () ->
+        step("Клик по разделу с Контактами", () ->
                 $("[title='Контакты']").click());
-        step("Contacts - page is working", () ->
+        step("Клик отработал. Страница с контактами открылась", () ->
                 $x("//div[@class='content']/div[@class='telephone']").shouldHave(text("+7 (495) 646 11 75")));
 
 

@@ -16,21 +16,19 @@ import org.junit.jupiter.api.extension.ExtendWith;
 
 @ExtendWith({AllureJunit5.class})
 public class TestBase {
-    public final String mainUrl = "https://bazt.ru/";
     @BeforeAll
     static void setUp() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         Configuration.startMaximized = true;
+
         DriverSettings.configure();
     }
 
     @AfterEach
     public void addAttachments() {
         String sessionId = DriverUtils.getSessionId();
-
         AllureAttachments.addScreenshotAs("Last screenshot");
         AllureAttachments.addPageSource();
-//        AllureAttachments.attachNetwork(); // todo
         AllureAttachments.addBrowserConsoleLogs();
         Selenide.closeWebDriver();
 

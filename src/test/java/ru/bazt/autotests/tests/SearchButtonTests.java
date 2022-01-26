@@ -14,7 +14,7 @@ public class SearchButtonTests extends TestBase {
     @DisplayName("Поиск работает на пустом значении")
     void searchCanWorkOnEmptyRequest() {
         step("Open main page", () ->
-                open(mainUrl));
+                open(""));
         step("Click on Search - button", () ->
                 $(".search_button").shouldBe(visible).click());
         step("Check available search - form", () ->
@@ -31,7 +31,7 @@ public class SearchButtonTests extends TestBase {
     @DisplayName("Поиск работает на валидном значении")
     void searchCanWorkOnNonEmptyRequest() {
         step("Open main page", () ->
-                open(mainUrl));
+                open(""));
         step("Click on Search - button", () ->
                 $(".search_button").shouldBe(visible).click());
         step("Check available search - form", () ->
@@ -48,7 +48,7 @@ public class SearchButtonTests extends TestBase {
     @DisplayName("Поиск работает при вводе XSS")
     void searchCanWorkOnXSSInjection() {
         step("Open main page", () ->
-                open(mainUrl));
+                open(""));
         step("Click on Search - button", () ->
                 $(".search_button").shouldBe(visible).click());
         step("Check available search - form", () ->
