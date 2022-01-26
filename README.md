@@ -1,9 +1,17 @@
-# Автотесты на главную страницу [bazt.ru](https://bazt.ru/)
+# Проект с автотестами на сайт компании Бизнес-Азимут [bazt.ru](https://bazt.ru/)
 ___
 ## Стэк проекта:
-| Java | Selenide | Junit5 | Gradle | Selenoid | Jenkins | IntelliJ IDEA | Allure Report | Telegram |
-|:------:|:----:|:------:|:------:|:--------:|:--------:|:-------------:|:---------:|:--------:|
-| <img src="media/images/JAVA.svg" width="40" height="40"> | <img src="media/images/Selenide.svg" width="40" height="40"> | <img src="media/images/Gradle.svg" width="40" height="40"> | <img src="media/images/Junit5.svg" width="40" height="40"> | <img src="media/images/Selenoid.svg" width="40" height="40"> | <img src="media/images/Jenkins.svg" width="40" height="40"> | <img src="media/images/IDEA.svg" width="40" height="40"> | <img src="media/images/Allure Report.svg" width="40" height="40"> | <img src="media/images/Telegram.svg" width="40" height="40"> |
+| Java | Selenide |                           Junit5                           |                           Gradle                           | Selenoid | Jenkins | IntelliJ IDEA | Allure Report | Telegram |
+|:------:|:----:|:----------------------------------------------------------:|:----------------------------------------------------------:|:--------:|:--------:|:-------------:|:---------:|:--------:|
+| <img src="media/images/JAVA.svg" width="40" height="40"> | <img src="media/images/Selenide.svg" width="40" height="40"> | <img src="media/images/JUnit5.svg" width="40" height="40"> | <img src="media/images/Gradle.svg" width="40" height="40"> | <img src="media/images/Selenoid.svg" width="40" height="40"> | <img src="media/images/Jenkins.svg" width="40" height="40"> | <img src="media/images/IDEA.svg" width="40" height="40"> | <img src="media/images/Allure Report.svg" width="40" height="40"> | <img src="media/images/Telegram.svg" width="40" height="40"> |
+
+___
+
+## Проверяемый функционал
+* Тест страницы с Контактами
+* Тест главной Страницы
+* Тест страницы поиска по сайту
+* Тест карусели на главной странице
 
 ___
 
@@ -39,14 +47,7 @@ gradle clean -DremoteDriverUrl=https://user1:1234@selenoid.autotests.cloud/wd/hu
 ```bash
 allure serve build/allure-results
 ```
-___
 
-## Проверяемый функционал
-* Тест страницы с Контактами
-* Тест главной Страницы
-* Тест страницы поиска по сайту
-* Тест карусели на главной странице
-___
 
 ## Результат прохождения тестов / лаунчей можно импортировать в Jira-таски
 ![alt "Jira issue"](media/images/Jira.png "Jira task")
