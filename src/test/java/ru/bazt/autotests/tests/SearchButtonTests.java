@@ -12,7 +12,7 @@ public class SearchButtonTests extends TestBase {
     @DisplayName("Поиск работает на пустом значении")
     void searchCanWorkOnEmptyRequest() {
         step("Открыть страницу с поиском", () -> open("/search"));
-        step("Форма поиска отображается на странице", () -> $(".sisea-search-form").shouldBe(visible).click());
+        step("Клик по иконке поиска", () -> $(".sisea-search-form").click());
         step("Отправить поисковой запрос без аргументов", () -> $("#search").setValue("").pressEnter());
         step("Отображается корректный аллерт", () -> $x("//*[contains(text(),'По вашему запросу ничего не найдено.')]").shouldBe(visible));
 
@@ -22,7 +22,7 @@ public class SearchButtonTests extends TestBase {
     @DisplayName("Поиск работает на валидном значении")
     void searchCanWorkOnNonEmptyRequest() {
         step("Открыть страницу с поиском", () -> open("/search"));
-        step("Форма поиска отображается на странице", () -> $(".sisea-search-form").shouldBe(visible).click());
+        step("Клик по иконке поиска", () -> $(".sisea-search-form").shouldBe(visible).click());
         step("Отправить поисковой запрос без аргументов", () -> $("#search").setValue("тест").pressEnter());
         step("Отображается корректный результат поиска", () -> $x("//*[contains(text(),'9 результатов найдено')]").shouldBe(visible));
 
@@ -32,8 +32,8 @@ public class SearchButtonTests extends TestBase {
     @DisplayName("Поиск работает при вводе XSS")
     void searchCanWorkOnXSSInjection() {
         step("Открыть страницу с поиском", () -> open("/search"));
-        step("Форма поиска отображается на странице", () -> $(".sisea-search-form").shouldBe(visible).click());
-        step("Отправить поисковой запрос без аргументов", () -> $("#search").setValue("<script >alert(\"Hello\");</script > \n").pressEnter());
+        step("Клик по иконке поиска", () -> $(".sisea-search-form").shouldBe(visible).click());
+        step("Отправить поисковой запрос с XSS", () -> $("#search").setValue("<script >alert(\"Hello\");</script > \n").pressEnter());
         step("Отображается корректный результат поиска", () -> $("[value = 'alert(\"Hello\"); ' ]").shouldBe(visible));
     }
 }
