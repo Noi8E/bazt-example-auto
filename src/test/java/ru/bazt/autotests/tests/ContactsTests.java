@@ -36,11 +36,11 @@ public class ContactsTests extends TestBase {
     @DisplayName("Страница с контактами работает")
     void contactsTestWithPageObject() {
         Contacts contacts = new Contacts();
-            contacts
-                    .openMainPage()
-                    .headerIsVisible()
-                    .clickToContactsButton()
-                    .isPhoneNumberVisible();
+        contacts
+                .openMainPage()
+                .headerIsVisible()
+                .clickToContactsButton()
+                .isPhoneNumberVisible();
     }
 
 }

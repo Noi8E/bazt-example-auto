@@ -56,20 +56,4 @@ public class MainPageTests extends TestBase {
 
 
     }
-
-
-    @Disabled("Локально - ок. На виртуальной машине тест падает из-за Yandex-метрики")
-    @Description("MainPageTests")
-    @DisplayName("Page console log should not have errors")
-    void consoleShouldNotHaveErrorsTest() {
-        step("Open url 'https://bazt.ru/'", () ->
-                open("https://bazt.ru/"));
-
-        step("Console logs should not contain text 'SEVERE'", () -> {
-            String consoleLogs = DriverUtils.getConsoleLogs();
-            String errorText = "SEVERE";
-
-            assertThat(consoleLogs).doesNotContain(errorText);
-        });
-    }
 }
